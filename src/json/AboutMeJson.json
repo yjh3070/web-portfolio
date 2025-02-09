@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "subject": "name",
+      "img": "emoji",
+      "title": "名前",
+      "content": "ユ・ジョンファ"
+    },
+    {
+      "subject": "birthday",
+      "img": "tablet",
+      "title": "生年月日",
+      "content": "2003.01.02"
+    }
+  ],
+  [
+    {
+      "subject": "address",
+      "img": "placeholder",
+      "title": "住所",
+      "content": "ユ・ジョンファ"
+    },
+    {
+      "subject": "phone_number",
+      "img": "phone_call",
+      "title": "電話番号",
+      "content": "010-3070-9238"
+    }
+  ],
+  [
+    {
+      "subject": "mail",
+      "img": "email",
+      "title": "メールアドレス",
+      "content": "junghwa.yu12@gmail.com"
+    },
+    {
+      "subject": "edu",
+      "img": "mortarboard",
+      "title": "最終学歴",
+      "content": "光州ソフトウェアマイスター高校\n ソフトウェア開発科 卒業"
+    }
+  ]
+]

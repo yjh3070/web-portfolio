@@ -1,0 +1,60 @@
+#About {
+  background-color: papayawhip; 
+}
+
+.About-head {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 8.5rem 0 4rem;
+  background-color: rgba(112,93,80,.9);
+  background-image: url(../images/macbook.jpg);
+  background-repeat: no-repeat;
+  background-size : cover;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+
+.About-title{
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  /* font-family: "Galmuri11", sans-serif; */
+  font-size: 4rem;
+  line-height: 1.25;
+}
+
+.About-sub-title{
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  /* font-family: 'HancomSans-Light'; */
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.About-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  padding: 0 0 4rem 0;
+  text-align: center;
+}
+
+.About-my-img {
+  display: inline-block;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  padding: 0 3rem;
+}
+
+.About-me-Container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
