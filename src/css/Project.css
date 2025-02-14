@@ -1,0 +1,16 @@
+#Project {
+  margin: 0 0;
+  padding: 5rem 0 0;
+  background-color: papayawhip; 
+  text-align: center;
+}
+
+.project-title {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.projects-img {
+  width: 20rem;
+}
