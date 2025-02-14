@@ -12,7 +12,10 @@ const Project = () => {
 
       <div>
         <div>TODO LIST</div>
-        <img className="projects-img" src={todo}/>
+        <div>
+          
+        </div>
+        <img className="projects-img" src={todo} alt="todo"/>
       </div>
     </div>
   )
