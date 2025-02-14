@@ -4,7 +4,7 @@ import Flow from "./Flow.jsx";
 
 import "../css/About.css";
 
-import dog from "../images/dog.jpg";
+import me from "../images/me.jpg";
 import about_me_json from "../json/AboutMeJson.json";
 // import address_phone_contents from "./AboutMeList";
 // import mail_edu_contents from "./AboutMeList";
@@ -24,7 +24,7 @@ const About = () => {
       <hr className="App-hr"/>
 
       <article className="About-content">
-        <img className="About-my-img" src={dog} alt="profile"/>
+        <img className="About-my-img" src={me} alt="profile"/>
         <div className="About-me-Container">
           <AboutInfoComponents contents={about_me_json[0]}/>
           <AboutInfoComponents contents={about_me_json[1]}/>
