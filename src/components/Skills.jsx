@@ -16,7 +16,7 @@ const Skills = () => {
 
   const skills = (skill_list) => {
     return skill_list.map((list) => {
-      return <img src={list} className="skill-icon"/>
+      return <img src={list} className="skill-icon" alt="skill"/>
     });
   }
 

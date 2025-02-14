@@ -46,7 +46,7 @@ const AboutInfoComponents = (contents) => {
 
     return (
       <div className="About-info-components" key={list.subject}>
-        <img className="About-icons" src={icon.img}/>
+        <img className="About-icons" src={icon.img} alt="icons"/>
         <div className="About-me-info">
           <div className="About-me-title">{list.title}</div>
           <div className="About-me-content">{list.content}</div>

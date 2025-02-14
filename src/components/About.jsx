@@ -24,7 +24,7 @@ const About = () => {
       <hr className="App-hr"/>
 
       <article className="About-content">
-        <img className="About-my-img" src={dog}/>
+        <img className="About-my-img" src={dog} alt="profile"/>
         <div className="About-me-Container">
           <AboutInfoComponents contents={about_me_json[0]}/>
           <AboutInfoComponents contents={about_me_json[1]}/>
