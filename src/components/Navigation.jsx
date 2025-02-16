@@ -7,8 +7,8 @@ const Navigation = () => {
       <div className="navbar">
         <span className="navbar-email">junghwa@gmail.com</span>
         <span className="navbar-menu">
-          <a href='#About'>Main</a>
-          <a href='#Skills'>Skill</a>
+          <a href='#root'>Main</a>
+          <a href='#Interview'>Interview</a>
           <a href='#Project'>Project</a>
         </span>
       </div>

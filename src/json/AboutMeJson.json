@@ -15,20 +15,6 @@
   ],
   [
     {
-      "subject": "address",
-      "img": "placeholder",
-      "title": "住所",
-      "content": "ユ・ジョンファ"
-    },
-    {
-      "subject": "phone_number",
-      "img": "phone_call",
-      "title": "電話番号",
-      "content": "010-3070-9238"
-    }
-  ],
-  [
-    {
       "subject": "mail",
       "img": "email",
       "title": "メールアドレス",

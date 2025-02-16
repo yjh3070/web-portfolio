@@ -3,15 +3,24 @@ body {
   max-width: 100vw;
   margin: 0 auto;
   box-sizing: border-box;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.app-body {
+  padding: 10rem 10rem 10rem;
 }
 
 .App-h1 {
-  font-family: source-han-sans-japanese, sans-serif;
+  display: block;
+  font-family: SUIT;
   font-weight: 900;
   font-style: normal;
   font-size: 3rem;
   text-align: center;
-  margin: 3rem 0 0;
+  margin: 3rem 0 1.5rem;
 }
 
 .App-hr {
@@ -29,13 +38,6 @@ body {
 @font-face {
   font-family: 'Cafe24Meongi-W-v1.0';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SUIT-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

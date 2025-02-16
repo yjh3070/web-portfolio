@@ -1,0 +1,33 @@
+#Interview {
+  margin: 1rem 0 0;
+}
+
+.interview-title {
+  display: block;
+  font-family: SUIT;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+}
+
+.qna-box {
+  margin: 0rem 4vw 1.5rem;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 18px;
+}
+
+.question {
+  padding-bottom: 1.3rem;
+  font-family: Pretendard JP;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.answer {
+  font-family: Pretendard JP;
+  font-weight: 200;
+  line-height: 1.5rem;
+}
