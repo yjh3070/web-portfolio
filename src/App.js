@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
-import Todo from "./components/Todo_Project";
+// import Todo from "./components/Todo_Project";
 
 function App() {
   return (
