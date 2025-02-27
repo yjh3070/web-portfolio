@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Project.css"
 import { ReactTyped } from "react-typed";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import todo from "../images/todo.jpg";
 import portfolio from "../images/portfolio.jpg";
@@ -14,21 +14,21 @@ const Project = () => {
       "title" : "Lost&Found",
       "content" : "校内紛失物管理のためのプロジェクト",
       "skill" : "HTML / CSS / Javasctirp / php",
-      "url" : "https://github.com/yjh3070/LostAndFound",
-      "to" : "/todo"
+      "url" : "https://github.com/yjh3070/LostAndFound"
+    },
     {
       "icon" : todo,
       "title" : "Todo List",
       "content" : "ウェブで実装させたtodo listサービスです.",
       "skill" : "React / php",
-      "url" : "https://github.com/yjh3070/todo-list",
+      "url" : "https://github.com/yjh3070/todo-list"
     },
     {
       "icon" : portfolio,
       "title" : "Portfolio",
       "content" : "私の個性を活かしたウェブポートフォリオです。",
       "skill" : "React",
-      "url" : "https://github.com/yjh3070/web-portfolio",
+      "url" : "https://github.com/yjh3070/web-portfolio"
     }
   ]
   
@@ -45,6 +45,7 @@ const Project = () => {
           </div>
           <div className="hover">
             <div className="project-hover-title">{list.title}</div>
+            <Link to={list.to} className="project-btn">詳しく見る</Link>
             <button className="project-btn" onClick={()=>{window.open(list.url)}}>github</button>
           </div>
         </div>
