@@ -5,22 +5,30 @@ import { ReactTyped } from "react-typed";
 
 import todo from "../images/todo.jpg";
 import portfolio from "../images/portfolio.jpg";
+import lost_found from "../images/lost-found.png";
 
 const Project = () => {
   const project_list = [
     {
+      "icon" : lost_found,
+      "title" : "Lost&Found",
+      "content" : "校内紛失物管理のためのプロジェクト",
+      "skill" : "HTML / CSS / Javasctirp / php",
+      "url" : "https://github.com/yjh3070/LostAndFound",
+      "to" : "/todo"
+    {
       "icon" : todo,
       "title" : "Todo List",
-      "content" : "웹으로 구현한 todo list 서비스 입니다.",
+      "content" : "ウェブで実装させたtodo listサービスです.",
       "skill" : "React / php",
-      "url" : "https://github.com/yjh3070"
+      "url" : "https://github.com/yjh3070/todo-list",
     },
     {
       "icon" : portfolio,
       "title" : "Portfolio",
-      "content" : "저만의 개성을 살려 만든 웹 포트폴리오 입니다.",
+      "content" : "私の個性を活かしたウェブポートフォリオです。",
       "skill" : "React",
-      "url" : "https://github.com/yjh3070/web-portfolio"
+      "url" : "https://github.com/yjh3070/web-portfolio",
     }
   ]
   
@@ -36,9 +44,8 @@ const Project = () => {
             <div className="project-skill">{list.skill}</div>
           </div>
           <div className="hover">
-            {/* <div>자세히 보기</div> */}
             <div className="project-hover-title">{list.title}</div>
-            <button onClick={()=>{window.open(list.url)}}>github</button>
+            <button className="project-btn" onClick={()=>{window.open(list.url)}}>github</button>
           </div>
         </div>
       )
