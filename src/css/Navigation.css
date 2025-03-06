@@ -22,14 +22,14 @@
 }
 
 .navbar-menu a {
-  padding-left: 2rem;
   font-size: 1rem;
   text-decoration-line: none;
   color: black;
 }
 
-.home-btn {
+.nav-btn {
   padding: 0;
+  padding-left: 2rem;
   border: none;
   background-color: transparent;
   font-size: 1rem;

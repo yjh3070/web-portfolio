@@ -14,7 +14,11 @@ const Navigation = () => {
   useEffect(() => {
     location.pathname === "/" ? setDisplay(true) : setDisplay(false);
     window.scrollTo(0,0)
-  }, [location])
+  }, [location]);
+
+  const scrollCallBack = useCallback((goto) => {
+    document.getElementById(goto).scrollIntoView();
+  }, [])
 
   return (
     <div id="Navigation">
@@ -22,9 +26,13 @@ const Navigation = () => {
         <span className="navbar-email">junghwa.yu12@gmail.com</span>
         <span className="navbar-github">github </span>
         <span className="navbar-menu">
-          
           {
-            display ? (<span> <button className="home-btn" onClick={goToHome}>Home</button> <a href='#Interview'>Interview</a> <a href='#Project'>Project</a> </span>) : null
+            display ? (
+            <span> 
+              <button className="nav-btn" onClick={goToHome}>Home</button> 
+              <button className="nav-btn" onClick={() => scrollCallBack("Interview")}>Interview</button> 
+              <button className="nav-btn" onClick={() => scrollCallBack("Project")}>Project</button> 
+            </span>) : <span></span>
           }
         </span>
       </div>

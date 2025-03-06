@@ -4,10 +4,12 @@ import "../css/AboutInfoComponents.css";
 import about_me_json from "../json/AboutMeJson.json";
 
 let content_list = () => {
+  let contentNum = 0;
   try {
     return about_me_json.map((content) => {
+      contentNum++;
         return (
-          <div className="About-infos">
+          <div className="About-infos" key={"infos_" + contentNum}>
           {content.map((list) => {
             return (
               <div className="About-info-components" key={list.subject}>
