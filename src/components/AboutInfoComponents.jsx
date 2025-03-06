@@ -1,26 +1,34 @@
 import React from "react";
 import "../css/AboutInfoComponents.css";
 
-const AboutInfoComponents = (contents) => {
-  
-  let content_list = contents.contents.map((list) => {
+import about_me_json from "../json/AboutMeJson.json";
 
-    return (
-      <div className="About-info-components" key={list.subject}>
-        <div className="About-me-info">
-          <div className="About-me-title">{list.title}</div>
-          <div className="About-me-content">{list.content}</div>
-        </div>
-      </div>
-    )
-  });
+let content_list = () => {
+  try {
+    return about_me_json.map((content) => {
+        return (
+          <div className="About-infos">
+          {content.map((list) => {
+            return (
+              <div className="About-info-components" key={list.subject}>
+                <div className="About-me-info">
+                  <div className="About-me-title">{list.title}</div>
+                  <div className="About-me-content">{list.content}</div>
+                </div>
+              </div>
+            )
+          })}
+          </div>
+        )
+      });
+  } catch (error) {
+    console.log(error);
+    alert(error);
+  }
+}
 
-  return(
-    <div className="About-infos">
-      {content_list}
-    </div>
-  );
-  
+const AboutInfoComponents = () => {
+  return content_list();
 }
 
 export default AboutInfoComponents;

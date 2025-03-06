@@ -6,7 +6,6 @@ import { ReactTyped } from "react-typed";
 import "../css/About.css";
 
 import me from "../images/me.jpg";
-import about_me_json from "../json/AboutMeJson.json";
 
 const About = () => {
   return (
@@ -30,8 +29,7 @@ const About = () => {
       <article className="About-content">
         <img className="About-my-img" src={me} alt="profile"/>
         <div className="About-me-Container">
-          <AboutInfoComponents contents={about_me_json[0]}/>
-          <AboutInfoComponents contents={about_me_json[1]}/>
+          <AboutInfoComponents/>
         </div>
       </article>
     </section>

@@ -1,19 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
-// import Todo from "./components/Todo_Project";
+import Todo from "./components/Todo_Project";
+import Protfolio from "./components/Portfolio_Project";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navigation/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          {/* <Route path="/todo" element={<Todo/>}/> */}
-        </Routes>
-      </BrowserRouter>
+      <Navigation/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/todo" element={<Todo />}/>
+        <Route path="/portfolio" element={<Protfolio/>}/>
+      </Routes>
     </div>
   );
 }

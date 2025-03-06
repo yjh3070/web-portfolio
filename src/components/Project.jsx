@@ -12,40 +12,44 @@ const Project = () => {
     {
       "icon" : lost_found,
       "title" : "Lost&Found",
-      "content" : "校内紛失物管理のためのプロジェクト",
+      "content" : "校内紛失物管理のためのプロジェクトです。",
       "skill" : "HTML / CSS / Javasctirp / php",
       "url" : "https://github.com/yjh3070/LostAndFound"
     },
     {
       "icon" : todo,
       "title" : "Todo List",
-      "content" : "ウェブで実装させたtodo listサービスです.",
-      "skill" : "React / php",
-      "url" : "https://github.com/yjh3070/todo-list"
+      "content" : "ウェブで実装させたtodo listサービスです。",
+      "skill" : "React / php / mysql",
+      "url" : "https://github.com/yjh3070/todo-list",
+      "to" : "/todo"
     },
     {
       "icon" : portfolio,
       "title" : "Portfolio",
       "content" : "私の個性を活かしたウェブポートフォリオです。",
       "skill" : "React",
-      "url" : "https://github.com/yjh3070/web-portfolio"
+      "url" : "https://github.com/yjh3070/web-portfolio",
+      "to" : "/portfolio"
     }
   ]
   
   const projects = (project_list) => {
-    console.log("po")
     return project_list.map((list) => {
       return (
-        <div className="project-box">
+        <div className="project-box" key={"project-"+list.title}>
           <div className="standard">
-            <img className="project-img" src={list.icon} alt="projects"/>
+            <img className="project-img" src={list.icon} alt="project-img" key="project"/>
             <div className="project-title">{list.title}</div>
             <div className="project-content">{list.content}</div>
             <div className="project-skill">{list.skill}</div>
           </div>
           <div className="hover">
             <div className="project-hover-title">{list.title}</div>
-            <Link to={list.to} className="project-btn">詳しく見る</Link>
+            {
+              list.title !== "Lost&Found" ? 
+              <Link to={list.to} className="project-btn" key="project-link">詳しく見る</Link> : null
+            }
             <button className="project-btn" onClick={()=>{window.open(list.url)}}>github</button>
           </div>
         </div>
