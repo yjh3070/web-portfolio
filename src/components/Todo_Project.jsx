@@ -7,7 +7,7 @@ import "../css/Project.css"
 const Todo = () => {
   return (
     <div id="Todo" className="project-page">
-      <Link className="go-home" to="/" ><img className="arrow" src={arrow}/>Go Home</Link>
+      <Link className="go-home" to="/" ><img className="arrow" src={arrow} alt="arrow"/>Go Home</Link>
       <ReactTyped
         startWhenVisible
         strings={["TODO LIST"]}
@@ -24,7 +24,7 @@ const Todo = () => {
         <br/>
         アプリケーションはフロントエンドとバックエンドの技術を組み合わせて開発されており、リアルタイムでデータを保存・管理できるように設計されています。
       </div>
-      <img className="project-video" src={todo_gif}></img>
+      <img className="project-video" src={todo_gif} alt="project"></img>
       <div className="project-page-content">
         <h2 className="App-h2">Technologies Used</h2>
         <br/>
