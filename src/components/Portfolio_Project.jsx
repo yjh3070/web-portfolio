@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ReactTyped } from "react-typed";
-import todo_gif from "../images/todo-video.gif";
+import portfoilo_gif from "../images/protfolio-video.gif";
 import arrow from "../images/arrow.png";
 import "../css/Project.css"
 
@@ -24,7 +24,7 @@ const Todo = () => {
         <br/>
         ユーザーがスムーズに情報を得られるように設計されており、私自身の個性を反映させたデザインになっています。
       </div>
-      <img className="project-video" src={todo_gif} alt="project"></img>
+      <img className="project-video" src={portfoilo_gif} alt="project"></img>
       <div className="project-page-content">
         <h2 className="App-h2">Technologies Used</h2>
         <br/>
