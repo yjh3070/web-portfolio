@@ -24,7 +24,6 @@ const Navigation = () => {
     <div id="Navigation">
       <div className="navbar">
         <span className="navbar-email">junghwa.yu12@gmail.com</span>
-        <span className="navbar-github">github </span>
         <span className="navbar-menu">
           {
             display ? (
